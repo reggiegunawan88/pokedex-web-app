@@ -4,7 +4,6 @@ import { NextComponentType } from 'next';
 import { AppContext, AppInitialProps, AppLayoutProps } from 'next/app';
 
 import '@/styles/global.css';
-import { wrapper } from '@/store';
 
 const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({
   Component,
@@ -14,4 +13,4 @@ const MyApp: NextComponentType<AppContext, AppInitialProps, AppLayoutProps> = ({
   return getLayout(<Component {...pageProps} />);
 };
 
-export default wrapper.withRedux(MyApp);
+export default MyApp;

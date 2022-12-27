@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         inter: ['Inter, sans-serif'],
       },
+      backgroundImage: {
+        'pokemon-bg': "url('/assets/images/pokedex-menu-bg.png')",
+      },
     },
     screens: {
       // => @media (min-width: 360px) { ... }
