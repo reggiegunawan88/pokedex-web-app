@@ -16,7 +16,6 @@
   "overrides": [
     // Configuration for TypeScript files
     {
-      "parser": "@babel/eslint-parser",
       "files": ["**/*.ts", "**/*.tsx"],
       "plugins": ["@typescript-eslint", "unused-imports", "tailwindcss"],
       "extends": [
