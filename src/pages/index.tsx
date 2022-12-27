@@ -1,13 +1,11 @@
 import { ReactNode } from 'react';
 
-// import { useRouter } from "next/router";
-
+import { useRouter } from 'next/router';
 import Home from '@/layout/Home';
 import Image from 'next/image';
-import Link from 'next/link';
 
 const Index = () => {
-  // const router = useRouter();
+  const router = useRouter();
 
   return (
     <div className="flex">
@@ -21,7 +19,7 @@ const Index = () => {
         </div>
         <div className="flex flex-row gap-x-4 text-xl">
           <div className="flex flex-col gap-y-3 text-white items-center">
-            <button className="btn-menu">
+            <button className="btn-menu" onClick={() => router.push('/')}>
               <div className="relative w-20 h-20">
                 <Image
                   alt="pokeball-pixel"
@@ -32,9 +30,8 @@ const Index = () => {
             </button>
             <span>Pokedex</span>
           </div>
-
           <div className="flex flex-col gap-y-3 text-white items-center">
-            <button className="btn-menu">
+            <button className="btn-menu" onClick={() => router.push('/')}>
               <div className="relative w-20 h-20">
                 <Image
                   alt="pokeball-pixel"
