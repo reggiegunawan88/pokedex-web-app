@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter, sans-serif'],
+        minecraft: ['Minecraft'],
       },
       backgroundImage: {
         'pokemon-bg': "url('/assets/images/pokedex-menu-bg.png')",
@@ -32,6 +32,7 @@ module.exports = {
     },
     colors: {
       white: '#FFFF',
+      pokedex: '#5169BF',
       gray: {
         50: '#F9FAFB',
         100: '#F3F4F6',

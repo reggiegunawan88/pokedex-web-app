@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import Home from '@/layout/Home';
@@ -20,27 +21,31 @@ const Index = () => {
         </div>
         <div className="flex flex-row gap-x-4 text-xl">
           <div className="flex flex-col items-center gap-y-3 text-white">
-            <button className="btn-menu" onClick={() => router.push('/')}>
-              <div className="relative h-20 w-20">
-                <Image
-                  alt="pokeball-pixel"
-                  src="/assets/images/pokeball-pixel.png"
-                  layout="fill"
-                />
-              </div>
-            </button>
+            <Link passHref href="/pokedex">
+              <button className="btn-menu">
+                <div className="relative h-20 w-20">
+                  <Image
+                    alt="pokeball-pixel"
+                    src="/assets/images/pokeball-pixel.png"
+                    layout="fill"
+                  />
+                </div>
+              </button>
+            </Link>
             <span>Pokedex</span>
           </div>
           <div className="flex flex-col items-center gap-y-3 text-white">
-            <button className="btn-menu" onClick={() => router.push('/')}>
-              <div className="relative h-20 w-20">
-                <Image
-                  alt="pokeball-pixel"
-                  src="/assets/images/bag-pixel.png"
-                  layout="fill"
-                />
-              </div>
-            </button>
+            <Link passHref href="/my-pokemon">
+              <button className="btn-menu" onClick={() => router.push('/')}>
+                <div className="relative h-20 w-20">
+                  <Image
+                    alt="pokeball-pixel"
+                    src="/assets/images/bag-pixel.png"
+                    layout="fill"
+                  />
+                </div>
+              </button>
+            </Link>
             <span>My Pokemons</span>
           </div>
         </div>
