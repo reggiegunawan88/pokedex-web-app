@@ -22,7 +22,7 @@ const Index = () => {
         <div className="flex flex-row gap-x-4 text-xl">
           <div className="flex flex-col items-center gap-y-3 text-white">
             <Link passHref href="/pokedex">
-              <button className="btn-menu">
+              <button className="btn-menu hover-scale">
                 <div className="relative h-20 w-20">
                   <Image
                     alt="pokeball-pixel"
@@ -36,7 +36,10 @@ const Index = () => {
           </div>
           <div className="flex flex-col items-center gap-y-3 text-white">
             <Link passHref href="/my-pokemon">
-              <button className="btn-menu" onClick={() => router.push('/')}>
+              <button
+                className="btn-menu hover-scale"
+                onClick={() => router.push('/')}
+              >
                 <div className="relative h-20 w-20">
                   <Image
                     alt="pokeball-pixel"

@@ -4,8 +4,8 @@ import Link from 'next/link';
 const Header = () => {
   return (
     <div className="flex flex-row items-center justify-between bg-pokedex px-6 py-4 text-white">
-      <div className="flex flex-row items-center">
-        <div className="relative h-4 w-4 laptop:hidden">
+      <button className="flex flex-row items-center gap-x-3">
+        <div className="relative h-4 w-4">
           <Image
             alt="arrow-left"
             src="/assets/icons/arrow-left.svg"
@@ -13,19 +13,19 @@ const Header = () => {
           />
         </div>
         <span className="hidden laptop:block">Back</span>
-      </div>
+      </button>
       <Link passHref href="/pokedex" className="cursor-pointer">
-        <div className="relative h-9 w-24 laptop:h-12 laptop:w-31">
+        <button className="relative h-9 w-24 laptop:h-12 laptop:w-40">
           <Image
             alt="pokedex-logo"
             src="/assets/images/pokedex-logo.png"
             layout="fill"
           />
-        </div>
+        </button>
       </Link>
       <Link passHref href="/my-pokemon" className="cursor-pointer">
-        <div className="flex flex-row items-center">
-          <div className="relative h-6 w-6 laptop:hidden">
+        <button className="flex flex-row items-center gap-x-3">
+          <div className="relative h-6 w-6">
             <Image
               alt="pokeball-logo"
               src="/assets/images/pokeball-pixel.png"
@@ -33,7 +33,7 @@ const Header = () => {
             />
           </div>
           <span className="hidden laptop:block">My Pokemon</span>
-        </div>
+        </button>
       </Link>
     </div>
   );
