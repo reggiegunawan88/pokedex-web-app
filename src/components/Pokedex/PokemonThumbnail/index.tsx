@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 const PokemonThumbnail = () => {
   return (
@@ -21,9 +22,11 @@ const PokemonThumbnail = () => {
       </div>
 
       {/* button detail */}
-      <button className="hover-scale rounded-full bg-red-400 py-3 px-9">
-        DETAILS
-      </button>
+      <Link passHref href="/pokedex/bulbasaur">
+        <button className="hover-scale rounded-full bg-red-400 py-3 px-9 text-white">
+          DETAILS
+        </button>
+      </Link>
     </div>
   );
 };

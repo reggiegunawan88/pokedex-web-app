@@ -10,7 +10,7 @@ const Pokedex = () => {
       <div className="flex-1 laptop:p-13">
         <PokemonList />
       </div>
-      <div className="flex-1 py-3 laptop:py-13">
+      <div className="flex-1 self-center py-3 laptop:py-13">
         <PokemonThumbnail />
       </div>
     </div>

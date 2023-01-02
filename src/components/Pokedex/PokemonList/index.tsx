@@ -7,8 +7,8 @@ const PokemonList = () => {
     <div className="flex h-full flex-col gap-y-3 rounded-lg p-3 shadow-lg laptop:bg-white laptop:p-7">
       <div className="flex flex-row items-center justify-between gap-x-2">
         <hr className="w-full border-b-default border-pokedex" />
-        <div className="flex flex-col whitespace-nowrap text-center">
-          <span>Pokemon List</span>
+        <div className="flex flex-col whitespace-nowrap text-center font-bold text-pokedex">
+          <span className="text-2xl">Pokemon List</span>
           <span>(Caught: 0)</span>
         </div>
         <hr className="w-full border-b-default border-pokedex" />
