@@ -16,5 +16,6 @@ module.exports = withBundleAnalyzer({
   reactStrictMode: true,
   images: {
     minimumCacheTTL: 60,
+    domains: ['raw.githubusercontent.com'],
   },
 });
