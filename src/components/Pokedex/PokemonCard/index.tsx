@@ -2,14 +2,19 @@ import React from 'react';
 
 import Image from 'next/image';
 
-const PokemonCard = () => {
+interface IProps {
+  data: any;
+}
+
+const PokemonCard = ({ data }: IProps) => {
   return (
-    <div className="hover-scale m-2 flex cursor-pointer justify-center rounded bg-green-300 p-3">
-      <div className="relative h-18 w-18 ">
+    <div className="hover-scale m-2 flex cursor-pointer justify-center rounded bg-indigo-300 p-3">
+      <div className="relative h-20 w-20">
         <Image
           alt="pokemon-img"
-          src="/assets/images/pikachu.svg"
+          src={data?.image}
           layout="fill"
+          objectFit="contain"
         />
       </div>
     </div>
