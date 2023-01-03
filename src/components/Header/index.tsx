@@ -8,7 +8,9 @@ const Header = () => {
     <div className="flex flex-row items-center justify-between bg-pokedex px-6 py-4 text-white">
       <button
         className="flex flex-row items-center gap-x-3"
-        onClick={() => router.back()}
+        onClick={() =>
+          router.push({ pathname: '/pokedex' }, undefined, { shallow: true })
+        }
       >
         <div className="relative h-4 w-4">
           <Image

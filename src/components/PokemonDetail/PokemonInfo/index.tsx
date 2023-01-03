@@ -1,3 +1,4 @@
+import conditionalPokemonType from '@/helpers/conditionalPokemonType';
 import Image from 'next/image';
 
 interface IProps {
@@ -17,7 +18,12 @@ const PokemonInfo = ({ data }: IProps) => {
           {data?.types?.map((element: any) => (
             <span
               key={element?.type.name}
-              className={`rounded-full bg-pokedex px-2 py-1 text-xs capitalize text-white`}
+              className={`rounded-full px-2 py-1 text-xs capitalize text-white`}
+              style={{
+                backgroundColor: conditionalPokemonType({
+                  type: element?.type.name,
+                })?.color,
+              }}
             >
               {element?.type.name}
             </span>
