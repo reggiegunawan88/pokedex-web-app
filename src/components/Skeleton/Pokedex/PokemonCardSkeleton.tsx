@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PokemonCardSkeleton = () => {
   return (
     <div className="m-2 flex animate-pulse justify-center rounded bg-gray-300 p-3">

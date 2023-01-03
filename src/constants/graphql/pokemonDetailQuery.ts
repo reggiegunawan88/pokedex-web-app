@@ -2,8 +2,12 @@ const POKEMON_DETAIL_QUERY = `query pokemon($name: String!) {
   pokemon(name: $name) {
     id
     name
-    sprites {
-      front_default
+    height
+    weight
+    abilities {
+      ability {
+        name
+      }
     }
     moves {
       move {
@@ -12,6 +16,18 @@ const POKEMON_DETAIL_QUERY = `query pokemon($name: String!) {
     }
     types {
       type {
+        name
+      }
+    }
+    sprites {
+      front_default
+      front_female
+      front_shiny
+    }
+    stats {
+      effort
+      base_stat
+      stat {
         name
       }
     }

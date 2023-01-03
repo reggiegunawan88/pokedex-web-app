@@ -1,5 +1,3 @@
-import React from 'react';
-
 import PokemonCard from '@/components/Pokedex/PokemonCard';
 import PokemonCardSkeleton from '@/components/Skeleton/Pokedex/PokemonCardSkeleton';
 

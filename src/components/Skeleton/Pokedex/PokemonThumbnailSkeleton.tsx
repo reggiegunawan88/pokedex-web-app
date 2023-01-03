@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PokemonThumbnailSkeleton = () => {
   return (
     <div className="flex flex-col items-center gap-y-5 laptop:gap-y-12">
