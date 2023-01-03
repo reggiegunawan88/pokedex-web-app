@@ -8,7 +8,7 @@ interface IHome {
   children: ReactNode;
 }
 
-const Home = (props: IHome) => {
+const HomeLayout = (props: IHome) => {
   return (
     <Div100vh className="relative flex flex-col bg-pokemon-bg">
       <div className="flex flex-1 flex-col items-center justify-center">
@@ -19,4 +19,4 @@ const Home = (props: IHome) => {
   );
 };
 
-export default Home;
+export default HomeLayout;

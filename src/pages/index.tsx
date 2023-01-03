@@ -4,7 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import Home from '@/layout/Home';
+import HomeLayout from '@/layout/HomeLayout';
 
 const Index = () => {
   const router = useRouter();
@@ -58,7 +58,7 @@ const Index = () => {
 };
 
 Index.getLayout = (page: ReactNode) => {
-  return <Home>{page}</Home>;
+  return <HomeLayout>{page}</HomeLayout>;
 };
 
 export default Index;

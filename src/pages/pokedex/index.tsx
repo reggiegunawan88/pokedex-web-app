@@ -1,7 +1,6 @@
 import React, { ReactNode } from 'react';
 
 import PokemonList from '@/components/Pokedex/PokemonList';
-// import PokemonThumbnail from '@/components/Pokedex/PokemonThumbnail';
 import PokemonThumbnail from '@/components/Pokedex/PokemonThumbnail';
 import PokemonThumbnailSkeleton from '@/components/Skeleton/Pokedex/PokemonThumbnailSkeleton';
 import usePokedex from '@/hooks/pages/Pokedex/usePokedex';
