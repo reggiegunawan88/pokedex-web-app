@@ -13,7 +13,9 @@ const PokemonInfo = ({ data }: IProps) => {
   return (
     <div className="flex flex-row laptop:flex-col laptop:gap-y-11">
       <div className="flex flex-1 flex-col justify-center gap-y-1 laptop:items-center laptop:gap-y-3">
-        <span className="text-2xl font-bold uppercase">{data?.name}</span>
+        <span className="text-2xl font-bold uppercase">
+          {data?.name}
+        </span>
         <div className="flex flex-row gap-x-3">
           {data?.types?.map((element: any) => (
             <span

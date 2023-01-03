@@ -32,7 +32,7 @@ const Index = () => {
                 </div>
               </button>
             </Link>
-            <span>Pokedex</span>
+            <span className='font-minecraft'>Pokedex</span>
           </div>
           <div className="flex flex-col items-center gap-y-3 text-white">
             <Link passHref href="/my-pokemon">
@@ -49,7 +49,7 @@ const Index = () => {
                 </div>
               </button>
             </Link>
-            <span>My Pokemons</span>
+            <span className='font-minecraft'>My Pokemons</span>
           </div>
         </div>
       </div>

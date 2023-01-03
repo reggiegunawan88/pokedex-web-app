@@ -10,7 +10,7 @@ const PokemonList = ({ data }: IProps) => {
     <div className="flex h-full flex-col rounded-lg p-3 shadow-lg laptop:gap-y-3 laptop:bg-white laptop:p-7">
       <div className="flex flex-row items-center justify-between gap-x-2">
         <hr className="w-full border-b-default border-pokedex" />
-        <div className="flex flex-col whitespace-nowrap text-center font-bold text-pokedex">
+        <div className="flex flex-col whitespace-nowrap text-center font-bold text-pokedex font-minecraft">
           <span className="text-base laptop:text-2xl">Pokemon List</span>
           <span className="text-sm laptop:text-base">(Caught: 0)</span>
         </div>

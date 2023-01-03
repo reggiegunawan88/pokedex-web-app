@@ -9,7 +9,7 @@ const PokemonThumbnail = () => {
   }));
 
   return (
-    <div className="flex flex-col items-center gap-y-5 laptop:gap-y-12">
+    <div className="flex flex-col items-center gap-y-5 laptop:gap-y-12 font-minecraft">
       {/* pokemon detail information */}
       <div className="flex flex-col text-center">
         <span className="text-3xl uppercase">{pokemonThumbnail?.name}</span>

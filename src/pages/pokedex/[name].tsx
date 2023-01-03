@@ -18,7 +18,7 @@ const PokemonDetail = () => {
   }
 
   return (
-    <div className="flex w-full max-w-md flex-col gap-y-4 p-4 laptop:mx-auto">
+    <div className="flex w-full max-w-md flex-col gap-y-4 p-4 laptop:mx-auto font-minecraft">
       <div className="overflow-auto rounded-lg bg-white px-4 py-11 shadow-lg">
         <div className="flex flex-col gap-y-4 laptop:flex-row laptop:gap-x-4">
           <div className="laptop:flex-1">
@@ -40,7 +40,7 @@ const PokemonDetail = () => {
             layout="fill"
           />
         </div>
-        <span className="uppercase text-red-500">Catch</span>
+        <span className="uppercase text-red-500 font-minecraft">Catch</span>
       </button>
     </div>
   );
