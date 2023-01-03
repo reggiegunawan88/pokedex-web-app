@@ -36,17 +36,17 @@ const usePokemonDetail = () => {
     pokemonInfo: {
       name: pokemonData?.name,
       types: pokemonData?.types,
-      sprites: pokemonData?.sprites
+      sprites: pokemonData?.sprites,
     },
     pokemonAbout: {
       id: pokemonData?.id,
       weight: pokemonData?.weight,
       height: pokemonData?.height,
-      abilities: pokemonData?.abilities
+      abilities: pokemonData?.abilities,
     },
     pokemonStats: {
-      stats: pokemonData?.stats
-    }
+      stats: pokemonData?.stats,
+    },
   };
 };
 

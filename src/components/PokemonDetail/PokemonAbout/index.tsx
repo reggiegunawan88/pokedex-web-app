@@ -26,7 +26,10 @@ const PokemonAbout = ({ data }: IProps) => {
           <span>{data?.height} m</span>
           <span>{data?.weight} lbs</span>
           {data?.abilities?.map((el: any) => (
-            <span key={el?.ability?.name} className="text-black w-fit rounded-full bg-gray-200 px-2 font-bold capitalize text-xs laptop:text-sm">
+            <span
+              key={el?.ability?.name}
+              className="text-black w-fit rounded-full bg-gray-200 px-2 font-bold capitalize text-xs laptop:text-sm"
+            >
               {el?.ability?.name}
             </span>
           ))}

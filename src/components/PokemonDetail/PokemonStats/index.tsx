@@ -12,14 +12,13 @@ const PokemonStats = ({ data }: IProps) => {
       </div>
       <div className="flex flex-col px-2 gap-y-2">
         {data?.stats?.map((el: any) => (
-          <div
-            key={el?.stat?.name}
-            className="flex flex-row items-center"
-          >
-            <span className="flex-1 capitalize font-bold">{el?.stat?.name}</span>
+          <div key={el?.stat?.name} className="flex flex-row items-center">
+            <span className="flex-1 capitalize font-bold">
+              {el?.stat?.name}
+            </span>
             <div className="flex-1 w-full h-2 bg-gray-300 rounded-full">
               <div
-                style={{ width: `${el?.base_stat/2}%` }}
+                style={{ width: `${el.base_stat / 2}%` }}
                 className="h-2 bg-green-500 rounded-full"
               ></div>
             </div>

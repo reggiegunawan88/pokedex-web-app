@@ -2,10 +2,10 @@ import Image from 'next/image';
 
 interface IProps {
   data: {
-    name: string
-    types: any
-    sprites: any
-  }
+    name: string;
+    types: any;
+    sprites: any;
+  };
 }
 
 const PokemonInfo = ({ data }: IProps) => {

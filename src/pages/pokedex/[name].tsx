@@ -4,13 +4,14 @@ import Image from 'next/image';
 
 import PokemonAbout from '@/components/PokemonDetail/PokemonAbout';
 import PokemonInfo from '@/components/PokemonDetail/PokemonInfo';
+import PokemonStats from '@/components/PokemonDetail/PokemonStats';
 import PokemonDetailSkeleton from '@/components/Skeleton/PokemonDetail/PokemonDetailSkeleton';
 import usePokemonDetail from '@/hooks/pages/PokemonDetail/usePokemonDetail';
 import MainLayout from '@/layout/MainLayout';
-import PokemonStats from '@/components/PokemonDetail/PokemonStats';
 
 const PokemonDetail = () => {
-  const { pokemonInfo, pokemonAbout, pokemonStats, isLoading } = usePokemonDetail();
+  const { pokemonInfo, pokemonAbout, pokemonStats, isLoading } =
+    usePokemonDetail();
 
   if (isLoading) {
     return <PokemonDetailSkeleton />;

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -28,7 +26,7 @@ const PokemonThumbnail = () => {
       </div>
 
       {/* button detail */}
-      <Link passHref href="/pokedex/bulbasaur">
+      <Link passHref href={`/pokedex/${pokemonThumbnail?.name}`}>
         <button className="hover-scale rounded-full bg-red-400 py-3 px-9 text-white">
           DETAILS
         </button>
