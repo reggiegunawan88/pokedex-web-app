@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { useRouter } from 'next/router';
 
-import POKEMON_DETAIL_QUERY from '@/constants/graphql/pokemonDetailQuery';
+import POKEMON_DETAIL_QUERY from '@/constants/graphql/POKEMON_DETAIL_QUERY';
 import getPokemonDetailData from '@/services/getPokemonData';
 
 const usePokemonDetail = () => {

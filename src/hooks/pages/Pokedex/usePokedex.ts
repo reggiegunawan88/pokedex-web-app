@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import POKEMON_LIST_QUERY from '@/constants/graphql/pokemonListQuery';
+import POKEMON_LIST_QUERY from '@/constants/graphql/POKEMON_LIST_QUERY';
 import getPokemonList from '@/services/getPokemonList';
 import usePokemonStore from '@/store/Pokemon';
 
