@@ -1,7 +1,9 @@
 import React, { ReactNode } from 'react';
 
 import PokemonList from '@/components/Pokedex/PokemonList';
+// import PokemonThumbnail from '@/components/Pokedex/PokemonThumbnail';
 import PokemonThumbnail from '@/components/Pokedex/PokemonThumbnail';
+import PokemonThumbnailSkeleton from '@/components/Skeleton/Pokedex/PokemonThumbnailSkeleton';
 import usePokedex from '@/hooks/pages/Pokedex/usePokedex';
 import MainLayout from '@/layout/MainLayout';
 
@@ -14,7 +16,7 @@ const Pokedex = () => {
         <PokemonList data={data} />
       </div>
       <div className="flex-1 self-center py-3 laptop:py-13">
-        <PokemonThumbnail />
+        {data.isLoading ? <PokemonThumbnailSkeleton /> : <PokemonThumbnail />}
       </div>
     </div>
   );
