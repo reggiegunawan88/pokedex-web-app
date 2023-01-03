@@ -28,6 +28,7 @@ const Header = () => {
             alt="pokedex-logo"
             src="/assets/images/pokedex-logo.png"
             layout="fill"
+            priority
           />
         </button>
       </Link>
@@ -38,6 +39,7 @@ const Header = () => {
               alt="pokeball-logo"
               src="/assets/images/pokeball-pixel.png"
               layout="fill"
+              priority
             />
           </div>
           <span className="hidden laptop:block">My Pokemon</span>

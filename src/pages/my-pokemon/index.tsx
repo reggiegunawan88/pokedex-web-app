@@ -1,11 +1,12 @@
 import { ReactNode } from 'react';
 
+import MyPokemonEmptyState from '@/components/MyPokemon/MyPokemonEmptyState';
 import MainLayout from '@/layout/MainLayout';
 
 const MyPokemon = () => {
   return (
-    <div className="flex w-full">
-      <span>You don&apos;t have any pokemon.</span>
+    <div className="flex w-full font-minecraft">
+      <MyPokemonEmptyState />
     </div>
   );
 };
