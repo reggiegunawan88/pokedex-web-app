@@ -1,77 +1,76 @@
 const pokemonType = [
   {
     type: 'normal',
-    color: '#A8A77A'
+    color: '#A8A77A',
   },
   {
     type: 'water',
-    color: '#6390F0'
+    color: '#6390F0',
   },
   {
     type: 'electric',
-    color: '#F7D02C'
+    color: '#F7D02C',
   },
   {
     type: 'grass',
-    color: '#7AC74C'
+    color: '#7AC74C',
   },
   {
     type: 'ice',
-    color: '#96D9D6'
+    color: '#96D9D6',
   },
   {
     type: 'fighting',
-    color: '#C22E28'
+    color: '#C22E28',
   },
   {
     type: 'poison',
-    color: '#A33EA1'
+    color: '#A33EA1',
   },
   {
     type: 'ground',
-    color: '#E2BF65'
+    color: '#E2BF65',
   },
   {
     type: 'flying',
-    color: '#A98FF3'
+    color: '#A98FF3',
   },
   {
     type: 'psychic',
-    color: '#F95587'
+    color: '#F95587',
   },
   {
     type: 'bug',
-    color: '#A6B91A'
+    color: '#A6B91A',
   },
   {
     type: 'rock',
-    color: '#B6A136'
+    color: '#B6A136',
   },
   {
     type: 'ghost',
-    color: '#735797'
+    color: '#735797',
   },
   {
     type: 'dragon',
-    color: '#6F35FC'
+    color: '#6F35FC',
   },
   {
     type: 'dark',
-    color: '#705746'
+    color: '#705746',
   },
   {
     type: 'steel',
-    color: '#B7B7CE'
+    color: '#B7B7CE',
   },
   {
     type: 'fairy',
-    color: '#D685AD'
+    color: '#D685AD',
   },
   {
     type: 'fire',
-    color: '#EE8130'
-  }
-  
+    color: '#EE8130',
+  },
 ];
 
 export default pokemonType;

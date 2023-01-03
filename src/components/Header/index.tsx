@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 const Header = () => {
   const router = useRouter();
   return (
-    <div className="flex flex-row items-center justify-between bg-pokedex px-6 py-4 text-white font-minecraft">
+    <div className="flex flex-row items-center justify-between bg-pokedex px-6 py-4 font-minecraft text-white">
       <button
         className="flex flex-row items-center gap-x-3"
         onClick={() => router.back()}
