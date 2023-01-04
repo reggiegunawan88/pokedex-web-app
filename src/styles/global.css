@@ -1,4 +1,5 @@
 @import './reusable.css';
+@import './snackbar.css';
 
 @tailwind base;
 

@@ -31,6 +31,7 @@ module.exports = {
       desktopFullHD: '1920px',
     },
     colors: {
+      black: '#0000',
       white: '#FFFF',
       pokedex: '#5169BF',
       yellow: {

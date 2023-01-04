@@ -32,7 +32,7 @@ const PokemonInfo = ({ data }: IProps) => {
         </div>
       </div>
       <div className="flex flex-1 justify-center">
-        <div className="relative h-31 w-31 laptop:h-40 laptop:w-40">
+        <div className="relative h-40 w-40">
           <Image
             alt="pokemon-img"
             src={data?.sprites?.front_default}

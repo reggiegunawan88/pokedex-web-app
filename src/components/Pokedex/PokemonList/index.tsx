@@ -22,7 +22,9 @@ const PokemonList = ({ data }: IProps) => {
           ? data.pokemonList?.map((item: any) => (
               <PokemonCard key={item.id} data={item} />
             ))
-          : [...new Array(5)].map(item => <PokemonCardSkeleton key={item} />)}
+          : [...new Array(5)].map((_item, idx) => (
+              <PokemonCardSkeleton key={idx} />
+            ))}
       </div>
     </div>
   );
