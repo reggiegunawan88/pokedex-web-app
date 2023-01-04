@@ -33,6 +33,9 @@ module.exports = {
     colors: {
       white: '#FFFF',
       pokedex: '#5169BF',
+      yellow: {
+        100: '#FFE588',
+      },
       gray: {
         50: '#F9FAFB',
         100: '#F3F4F6',
