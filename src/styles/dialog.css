@@ -1,0 +1,16 @@
+/* custom css for modal dialog animation */
+
+.fade-in {
+  animation: fadeInAnimation 200ms ease-in;
+}
+
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
