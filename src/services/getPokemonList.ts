@@ -4,7 +4,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 interface IProps {
   query: string;
-  variables: any;
+  variables: unknown;
 }
 
 // get Hoenn pokemon data list

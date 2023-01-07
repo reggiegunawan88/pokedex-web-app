@@ -1,27 +1,10 @@
 import Image from 'next/image';
 
-import useSnackbarStore from '@/store/Snackbar';
+import useSnackbar from '@/hooks/components/Snackbar/useSnackbar';
 
 const Snackbar = () => {
-  const { isOpen, description, type, closeSnackbar } = useSnackbarStore(
-    state => ({
-      isOpen: state.isOpen,
-      description: state.description,
-      type: state.type,
-      closeSnackbar: state.closeSnackbar,
-    })
-  );
-
-  const renderSnackbarBackground = () => {
-    switch (type) {
-      case 'SUCCESS':
-        return '#34D399';
-      case 'ERROR':
-        return '#F87171';
-      default:
-        return '#0000';
-    }
-  };
+  const { isOpen, description, closeSnackbar, renderSnackbarBackground } =
+    useSnackbar();
 
   return (
     <div

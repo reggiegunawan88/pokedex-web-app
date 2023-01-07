@@ -1,6 +1,6 @@
 interface IFetchConfig {
   url: string;
-  bodyData: any;
+  bodyData: unknown;
   method: string;
 }
 
