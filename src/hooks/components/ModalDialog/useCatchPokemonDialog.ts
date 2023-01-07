@@ -15,8 +15,9 @@ interface IProps {
 }
 
 const useCatchPokemonDialog = ({ pokemon }: IProps) => {
-  const { storePokemon } = useMyPokemonCollection(state => ({
+  const { storePokemon, myPokemon } = useMyPokemonCollection(state => ({
     storePokemon: state.storePokemon,
+    myPokemon: state.myPokemon,
   }));
   const { closeDialog } = useDialogStore(state => ({
     closeDialog: state.closeDialog,
@@ -29,12 +30,25 @@ const useCatchPokemonDialog = ({ pokemon }: IProps) => {
       setSnackbarType: state.setSnackbarType,
     }));
   const [nickname, setNickname] = useState<string>('');
+  const [nicknameExist, setNicknameExist] = useState<boolean>(false);
 
   const setPokemonNickname = (e: React.ChangeEvent<HTMLInputElement>) => {
     setNickname(e.currentTarget.value);
   };
 
   const savePokemon = () => {
+    setNicknameExist(false);
+    // check if nickname is exist
+    const isNicknameExist = myPokemon.some((el: any) => {
+      return el.nickname.toUpperCase() === nickname.toUpperCase();
+    });
+
+    // return error message if nickname is exist
+    if (isNicknameExist) {
+      return setNicknameExist(true);
+    }
+
+    // store pokemon if nickname is unique
     const pokemonData = {
       ...pokemon,
       nickname,
@@ -43,10 +57,10 @@ const useCatchPokemonDialog = ({ pokemon }: IProps) => {
     closeDialog();
     openSnackbar();
     setSnackbarDescription('Successfully caught pokemon!');
-    setSnackbarType('SUCCESS');
+    return setSnackbarType('SUCCESS');
   };
 
-  return { setPokemonNickname, savePokemon };
+  return { nicknameExist, setPokemonNickname, savePokemon };
 };
 
 export default useCatchPokemonDialog;
