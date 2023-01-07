@@ -7,11 +7,13 @@ interface IProps {
 const MyPokemonCard = ({ data }: IProps) => {
   return (
     <div className="hover-scale relative flex cursor-pointer flex-col rounded border-default border-pokedex bg-white">
-      <div className="relative my-1 mx-4 h-16 w-16 self-center laptop:my-4 laptop:mx-6 laptop:h-20 laptop:w-20">
+      <div className="relative my-1 mx-4 h-20 w-20 self-center laptop:my-4 laptop:mx-6 laptop:h-40 laptop:w-40">
         <Image
           alt="my-pokemon-img"
           src={data?.sprites?.front_default}
           layout="fill"
+          priority
+          objectFit="cover"
         />
       </div>
       <button className="absolute right-1 top-1">
@@ -24,7 +26,7 @@ const MyPokemonCard = ({ data }: IProps) => {
         </div>
       </button>
       <div className="flex justify-center bg-pokedex py-1 px-3">
-        <span className="font-minecraft text-xs text-yellow-100 laptop:text-lg">
+        <span className="font-minecraft text-sm text-yellow-100 laptop:text-lg">
           {data?.nickname}
         </span>
       </div>
