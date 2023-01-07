@@ -10,7 +10,7 @@ const MyPokemonCard = ({ data }: IProps) => {
       <div className="relative my-1 mx-4 h-16 w-16 self-center laptop:my-4 laptop:mx-6 laptop:h-20 laptop:w-20">
         <Image
           alt="my-pokemon-img"
-          src="/assets/images/pikachu.svg"
+          src={data?.sprites?.front_default}
           layout="fill"
         />
       </div>
@@ -25,7 +25,7 @@ const MyPokemonCard = ({ data }: IProps) => {
       </button>
       <div className="flex justify-center bg-pokedex py-1 px-3">
         <span className="font-minecraft text-xs text-yellow-100 laptop:text-lg">
-          Bulbasaur
+          {data?.nickname}
         </span>
       </div>
     </div>
