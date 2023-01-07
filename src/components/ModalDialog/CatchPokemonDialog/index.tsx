@@ -13,9 +13,10 @@ interface IProps {
 }
 
 const CatchPokemonDialog = ({ pokemon }: IProps) => {
-  const { savePokemon, setPokemonNickname } = useCatchPokemonDialog({
-    pokemon,
-  });
+  const { nicknameExist, savePokemon, setPokemonNickname } =
+    useCatchPokemonDialog({
+      pokemon,
+    });
   return (
     <div className="mx-4 flex flex-col rounded-lg bg-white px-4 py-9 text-center">
       <span className="font-sans text-xl font-bold">
@@ -27,14 +28,11 @@ const CatchPokemonDialog = ({ pokemon }: IProps) => {
           placeholder="Pokemon nickname"
           onChange={setPokemonNickname}
         />
-        {/* <span
-              className={`mt-3 font-sans text-sm font-bold text-red-400 ${
-                catchStatus === false ? 'visible' : 'hidden'
-              }`}
-            > */}
-        {/* <span className={`mt-3 font-sans text-sm font-bold text-red-400`}>
-              You have to give different nickname for the Pokemon.
-            </span> */}
+        {nicknameExist && (
+          <span className={`mt-3 font-sans text-sm font-bold text-red-400`}>
+            You have to give different nickname for the Pokemon.
+          </span>
+        )}
       </div>
       <button
         className="mt-5 w-full rounded-full bg-red-400 py-3"

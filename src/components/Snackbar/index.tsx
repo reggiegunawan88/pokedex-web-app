@@ -17,7 +17,7 @@ const Snackbar = () => {
         style={{ backgroundColor: renderSnackbarBackground() }}
       >
         <div className="flex flex-row items-center gap-x-4 px-6 py-3 text-white">
-          <span className="font-sans font-bold capitalize">{description}</span>
+          <span className="font-sans font-bold">{description}</span>
           <button className="relative h-4 w-4" onClick={closeSnackbar}>
             <Image
               alt="close-icon"
