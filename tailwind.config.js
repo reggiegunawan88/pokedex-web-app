@@ -4,7 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter, sans-serif'],
+        minecraft: ['Minecraft'],
+      },
+      backgroundImage: {
+        'pokemon-bg': "url('/assets/images/pokedex-menu-bg.png')",
       },
     },
     screens: {
@@ -28,7 +31,12 @@ module.exports = {
       desktopFullHD: '1920px',
     },
     colors: {
+      black: '#0000',
       white: '#FFFF',
+      pokedex: '#5169BF',
+      yellow: {
+        100: '#FFE588',
+      },
       gray: {
         50: '#F9FAFB',
         100: '#F3F4F6',
@@ -40,6 +48,15 @@ module.exports = {
         700: '#374151',
         800: '#1F2937',
         900: '#111827',
+      },
+      blue: {
+        100: '#E1F0FF',
+        200: '#93C8FD',
+        300: '#5AABFC',
+        400: '#057DF4',
+        500: '#0468CB',
+        600: '#0356A8',
+        700: '#023B73',
       },
       indigo: {
         50: '#EEF2FF',

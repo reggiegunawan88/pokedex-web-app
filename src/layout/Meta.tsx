@@ -1,16 +1,13 @@
-import { NextSeo } from 'next-seo';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
-import { AppConfig } from '@/utils/AppConfig';
+// type IMetaProps = {
+//   title: string;
+//   description: string;
+//   canonical?: string;
+// };
 
-type IMetaProps = {
-  title: string;
-  description: string;
-  canonical?: string;
-};
-
-const Meta = (props: IMetaProps) => {
+const Meta = () => {
   const router = useRouter();
 
   return (
@@ -47,7 +44,7 @@ const Meta = (props: IMetaProps) => {
           key="favicon"
         />
       </Head>
-      <NextSeo
+      {/* <NextSeo
         title={props.title}
         description={props.description}
         canonical={props.canonical}
@@ -58,7 +55,7 @@ const Meta = (props: IMetaProps) => {
           locale: AppConfig.locale,
           site_name: AppConfig.site_name,
         }}
-      />
+      /> */}
     </>
   );
 };
