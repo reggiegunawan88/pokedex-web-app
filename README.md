@@ -15,6 +15,6 @@
 
 https://graphql-pokeapi.vercel.app/api/graphql
 
-## Web Apps Preview
+## Website URL
 
 https://pokedex-apps-reggie.vercel.app/
