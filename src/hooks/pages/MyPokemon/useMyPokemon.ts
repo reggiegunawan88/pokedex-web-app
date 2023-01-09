@@ -3,17 +3,24 @@ import { useState, useEffect } from 'react';
 import useMyPokemonCollection from '@/store/MyPokemonCollection';
 
 const useMyPokemon = () => {
-  const { myPokemon } = useMyPokemonCollection(state => ({
-    myPokemon: state.myPokemon,
+  const { pokemonCollection } = useMyPokemonCollection(state => ({
+    pokemonCollection: state.pokemonCollection,
   }));
   const [myPokemonList, setMyPokemonList] = useState<Array<any>>([]);
+  const [selectedNickname, setSelectedNickname] = useState<string>('');
+
+  const setSelectedPokemon = (param: string) => {
+    setSelectedNickname(param);
+  };
 
   useEffect(() => {
-    setMyPokemonList(myPokemon);
-  }, []);
+    setMyPokemonList(pokemonCollection);
+  }, [pokemonCollection]);
 
   return {
     myPokemonList,
+    selectedNickname,
+    setSelectedPokemon,
   };
 };
 
