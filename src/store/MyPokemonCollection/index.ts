@@ -2,16 +2,21 @@ import create from 'zustand';
 import { persist } from 'zustand/middleware';
 
 interface IPokemonCollection {
-  myPokemon: Array<any>;
+  pokemonCollection: Array<any>;
   storePokemon: (data: any) => void;
+  updatePokemonCollection: (data: any) => void;
 }
 
 const useMyPokemonCollection = create<IPokemonCollection>()(
   persist(
     set => ({
-      myPokemon: [],
+      pokemonCollection: [],
       storePokemon: (data: any) =>
-        set(state => ({ myPokemon: [...state.myPokemon, data] })),
+        set(state => ({
+          pokemonCollection: [...state.pokemonCollection, data],
+        })),
+      updatePokemonCollection: (data: any) =>
+        set(() => ({ pokemonCollection: data })),
     }),
     {
       name: 'myPokemon-storage',

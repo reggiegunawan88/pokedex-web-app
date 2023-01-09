@@ -15,9 +15,9 @@ interface IProps {
 }
 
 const useCatchPokemonDialog = ({ pokemon }: IProps) => {
-  const { storePokemon, myPokemon } = useMyPokemonCollection(state => ({
+  const { pokemonCollection, storePokemon } = useMyPokemonCollection(state => ({
     storePokemon: state.storePokemon,
-    myPokemon: state.myPokemon,
+    pokemonCollection: state.pokemonCollection,
   }));
   const { closeDialog } = useDialogStore(state => ({
     closeDialog: state.closeDialog,
@@ -39,7 +39,7 @@ const useCatchPokemonDialog = ({ pokemon }: IProps) => {
   const savePokemon = () => {
     setNicknameExist(false);
     // check if nickname is exist
-    const isNicknameExist = myPokemon.some((el: any) => {
+    const isNicknameExist = pokemonCollection.some((el: any) => {
       return el.nickname.toUpperCase() === nickname.toUpperCase();
     });
 
