@@ -10,15 +10,16 @@ const Index = () => {
   const router = useRouter();
 
   return (
-    <div className="flex">
+    <div className="flex font-minecraft">
       <div className="flex flex-col items-center gap-y-13">
-        <div className="relative h-24 w-50 laptop:h-40 laptop:w-full">
+        <div className="relative h-24 w-60 laptop:h-40 laptop:w-full">
           <Image
             alt="pokedex-logo"
             src="/assets/images/pokedex-logo.png"
             layout="fill"
           />
         </div>
+        <span className="text-2xl text-white">Welcome To Pokedex App</span>
         <div className="flex flex-row gap-x-4 text-xl">
           <div className="flex flex-col items-center gap-y-3 text-white">
             <Link passHref href="/pokedex">
@@ -32,7 +33,7 @@ const Index = () => {
                 </div>
               </button>
             </Link>
-            <span className="font-minecraft">Pokedex</span>
+            <span>Pokedex</span>
           </div>
           <div className="flex flex-col items-center gap-y-3 text-white">
             <Link passHref href="/my-pokemon">
@@ -49,7 +50,7 @@ const Index = () => {
                 </div>
               </button>
             </Link>
-            <span className="font-minecraft">My Pokemons</span>
+            <span>My Pokemons</span>
           </div>
         </div>
       </div>
